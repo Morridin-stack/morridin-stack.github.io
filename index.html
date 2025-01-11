@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreamshard</title>
+    <title>Dream Shard Blog</title>
     <style>
         body {
             background-color: black;
-            color: #00ff00;
+            color: #00bfff; /* Light blue text */
             font-family: "Courier New", Courier, monospace;
             font-size: 16px;
             margin: 0;
-            padding: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #111; /* Dark gray for sidebar */
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.7);
+        }
+        .sidebar h2 {
+            color: #00bfff;
+            font-size: 18px;
+            margin: 0 0 10px;
+            text-align: center;
+        }
+        .sidebar a {
+            color: #00bfff;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #222; /* Highlight on hover */
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
         }
         .crt {
             filter: contrast(1.2) brightness(0.8);
-            text-shadow: 0 0 2px #00ff00, 0 0 5px #00ff00;
+            text-shadow: 0 0 2px #00bfff, 0 0 5px #00bfff;
         }
         a {
-            color: #00ff00;
+            color: #00bfff;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="crt">
-        <h1>Welcome to My Blog</h1>
-        <p>Stay tuned for updates!</p>
-        <p><a href="https://github.com/<morridin-stack>">View my GitHub</a></p>
-    </div>
-</body>
-</html>
+ 
